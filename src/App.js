@@ -34,7 +34,7 @@ const App = (props) => {
                 <Timeline.Item style={{cursor: 'pointer'}} key="1" dot={<ClockCircleOutlined style={{ fontSize: '16px' }} />} color="blue" onClick={() => {
                   setCourse(1)
                 }}>
-                  <Text strong>since 2018</Text>
+                  <Text strong>2018-2021</Text>
                   <div style={{display: 'flex', flexDirection: 'column'}}>
                     <Text> Master in Mathematics and Applications (Computer and Informatics branch)</Text>
                     <Text type="secondary">University of Aveiro, Department of Mathematics, Aveiro</Text>
@@ -120,6 +120,21 @@ const App = (props) => {
               <Timeline mode="left">
               <Timeline.Item>
                 <Text strong>since 2020</Text>
+                <div style={{display: 'flex', flexDirection: 'column'}}>
+                  <Text> Full-stack Developer & Data Analyst, Sinmetro</Text>
+                  <Text type="secondary">
+                    Development of web plataforms using Vue.js and Laravel and integrate them with some erp's used in industry. This plataforms are created with the objective to improve and implement the 'Fourth Industrial Revolution' in the companies.
+                  </Text>
+                  <Text type="secondary">
+                    Responsible for create and mantain docker infrastructures for development, test and production envirnments. Create and mantain pipelines to improve our ci/cd flow. Responsible for linux servers where we have our development applications in test, private docker registry, etc. Principal resposible to update our applications in clients server and support them.
+                  </Text>
+                  <Text type="secondary">
+                    Responsible for developing and implementing solutions with artificial intelligence and machine learning methods.
+                  </Text>
+                </div>
+              </Timeline.Item>
+              <Timeline.Item>
+                <Text strong>2020</Text>
                 <div style={{display: 'flex', flexDirection: 'column'}}>
                   <Text> R&D Software Developer, Human Profiler</Text>
                   <Text type="secondary">
@@ -217,12 +232,24 @@ const App = (props) => {
           <Wrapper>
             <Row>
               <Col style={gridStyle} xs={24} sm={12} md={8}>
+                <Icon className="fas fa-cogs" style={{ fontSize: 75, width: 'auto' }}/>
+                <Text>DevOps Culture</Text>
+              </Col>
+              <Col style={gridStyle} xs={24} sm={12} md={8}>
+                <Icon className="fas fa-infinity" style={{ fontSize: 75, width: 'auto' }}/>
+                <Text>Agile</Text>
+              </Col>
+              <Col style={gridStyle} xs={24} sm={12} md={8}>
                 <Icon className="fab fa-aws" style={{ fontSize: 75, width: 'auto' }}/>
                 <Text>API Gateway EC2 S3 Lambda Cognito</Text>
               </Col>
               <Col style={gridStyle} xs={24} sm={12} md={8}>
                 <Icon className="fab fa-php" style={{ fontSize: 75, width: 'auto' }}/>
                 <Text>php</Text>
+              </Col>
+              <Col style={gridStyle} xs={24} sm={12} md={8}>
+                <Icon className="fab fa-laravel" style={{ fontSize: 75, width: 'auto' }}/>
+                <Text>Laravel</Text>
               </Col>
               <Col style={gridStyle} xs={24} sm={12} md={8}>
                 <Icon className="fab fa-python" style={{ fontSize: 75, width: 'auto' }}/>
@@ -249,6 +276,10 @@ const App = (props) => {
                 <Text>React JS React Native</Text>
               </Col>
               <Col style={gridStyle} xs={24} sm={12} md={8}>
+                <Icon className="fab fa-vuejs" style={{ fontSize: 75, width: 'auto' }}/>
+                <Text>Vue JS</Text>
+              </Col>
+              <Col style={gridStyle} xs={24} sm={12} md={8}>
                 <Icon className="fas fa-database" style={{ fontSize: 75, width: 'auto' }}/>
                 <Text>MySQL SQL Server MongoDB</Text>
               </Col>
@@ -257,12 +288,32 @@ const App = (props) => {
                 <Text>Java</Text>
               </Col>
               <Col style={gridStyle} xs={24} sm={12} md={8}>
-                <Avatar shape='square' src='https://socket.io/css/images/logo.svg' style={{height: '60px', width: '200px',  color: '#1890ff'}}/>
+                <Avatar shape='square' src='https://w7.pngwing.com/pngs/162/702/png-transparent-socket-io-node-js-express-js-npm-network-socket-github-angle-triangle-logo-thumbnail.png' style={{height: '60px', width: '200px',  color: '#1890ff'}}/>
                 <Text>socket.io</Text>
               </Col>
               <Col style={gridStyle} xs={24} sm={12} md={8}>
                 <Icon className="fab fa-bootstrap" style={{ fontSize: 75, width: 'auto' }}/>
                 <Text>Bootstrap</Text>
+              </Col>
+              <Col style={gridStyle} xs={24} sm={12} md={8}>
+                <Icon className="fab fa-linux" style={{ fontSize: 75, width: 'auto' }}/>
+                <Text>Linux</Text>
+              </Col>
+              <Col style={gridStyle} xs={24} sm={12} md={8}>
+                <Icon className="fab fa-docker" style={{ fontSize: 75, width: 'auto' }}/>
+                <Text>Docker</Text>
+              </Col>
+              <Col style={gridStyle} xs={24} sm={12} md={8}>
+                <Icon className="fab fa-git" style={{ fontSize: 75, width: 'auto' }}/>
+                <Text>Git</Text>
+              </Col>
+              <Col style={gridStyle} xs={24} sm={12} md={8}>
+                <Icon className="fab fa-bitbucket" style={{ fontSize: 75, width: 'auto' }}/>
+                <Text>Bitbucket</Text>
+              </Col>
+              <Col style={gridStyle} xs={24} sm={12} md={8}>
+                <Icon className="fab fa-jira" style={{ fontSize: 75, width: 'auto' }}/>
+                <Text>Jira</Text>
               </Col>
             </Row>
             <Row>
@@ -277,9 +328,9 @@ const App = (props) => {
                 >
                   <Card.Meta title="Shopping Cart" />
                   <Text type="secondary">A mobile app to help you track your spendings by category and over time</Text>
-                  <div style={{marginTop:10}}>
+                  {/* <div style={{marginTop:10}}>
                     <a href='https://play.google.com/store/apps/details?id=pt.fhenriques.shopping_cart'>Mobile</a>
-                  </div>
+                  </div> */}
                 </Card>
               </Col>
               <Col xs={24} sm={12} md={12} lg={8} justify='center' align='middle'>
@@ -290,12 +341,12 @@ const App = (props) => {
                 >
                   <Card.Meta title="Ocean king" />
                   <Text type="secondary">A web and mobile game inspired in skull king card game</Text>
-                  <div style={{marginTop:10}}>
+                  {/* <div style={{marginTop:10}}>
                     <a href='https://minecode.github.io/ocean_king/'>Web</a>
                   </div>
                   <div>
                     <a href='https://play.google.com/store/apps/details?id=pt.fhenriques.ocean_king&hl=pt_PT'>Mobile</a>
-                  </div>
+                  </div> */}
                 </Card>
               </Col>
               <Col xs={24} sm={12} md={12} lg={8} justify='center' align='middle'>
@@ -306,9 +357,9 @@ const App = (props) => {
               >
                 <Card.Meta title="Pet find"/>
                 <Text type="secondary">A mobile app to help you or other persons to find her animals</Text>
-                <div style={{marginTop:10}}>
+                {/* <div style={{marginTop:10}}>
                   <a href='https://play.google.com/store/apps/details?id=pt.fhenriques.petfind&hl=pt_PT'>Mobile</a>
-                </div>
+                </div> */}
               </Card>
             </Col>
             </Row>
@@ -342,16 +393,20 @@ const App = (props) => {
               </Col>
               <Col xs={24} sm={24} md={18} lg={19} xl={19}>
                 <Row>
+                  <Title>Fábio FullStack/DevOps</Title>
+                  <Paragraph>
+                    I'm Fábio, a Fullstack Developer with a passion for crafting exceptional digital experiences through cutting-edge technologies. With a focus on Docker, DevOps culture, and Agile methodologies, I thrive on bringing ideas to life and delivering innovative solutions that drive business success.
+                  </Paragraph>
                   <Title>About me</Title>
                   <Paragraph>
-                    I'm currently a software developer @ Match Profiler and am working with technologies such as reactor, django and AWS cloud where I recently obtained Cloud Practitioner certification. Working in the cloud is something that motivates me and it is my goal to learn and find out more about it.
+                    I embarked on my journey in the world of software development fueled by a curiosity for technology and a desire to make a meaningful impact. Throughout my career, I've had the privilege of working on a diverse range of projects, from building sleek and intuitive user interfaces with Vue.js to architecting robust backend systems using Laravel. My love for problem-solving and continuous learning has driven me to stay at the forefront of emerging trends and technologies, always seeking new ways to improve and innovate.
+                  </Paragraph>
+                  <Title>My Expertise</Title>
+                  <Paragraph>
+                    Docker is not just a tool for me; it's a game-changer. I have a deep understanding of containerization and have leveraged Docker to streamline development workflows, improve scalability, and ensure consistency across different environments. By embracing DevOps principles, I foster collaboration between teams, automate processes, and accelerate the delivery of high-quality software. I firmly believe that a strong DevOps culture is essential for driving innovation and achieving operational excellence.
                   </Paragraph>
                   <Paragraph>
-                    In every project I have integrated I have developed my proactivity and versatility and these are the characteristics that I want to take to my next professional challenge.
-                    I am determined, focused and like to codify, especially if it is a challenging project, where I can learn and discover new things.
-                  </Paragraph>
-                  <Paragraph>
-                    I want to improve and at this moment I am open to work with an experienced and talented team to help me progress in my career, but at the same time share my experience in the job market to help the team achieve its goals.
+                    Agile methodologies resonate deeply with my approach to software development. I thrive in dynamic and collaborative environments where adaptability and continuous improvement are valued. Whether it's working in sprints, conducting daily stand-ups, or facilitating retrospectives, I am committed to delivering value to stakeholders efficiently and effectively.
                   </Paragraph>
                 </Row>
               </Col>

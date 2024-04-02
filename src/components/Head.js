@@ -6,7 +6,7 @@ const { Title, Text } = Typography;
 
 const Head = () => {
   return (
-    <Header className="site-layout-sub-header-background" style={{ paddingLeft: 24 }}>
+    <Header className="site-layout-sub-header-background" style={{ paddingLeft: 24, position: 'sticky', top: 0, zIndex: 50 }}>
       <Row align="middle">
         <Col xs={24} sm={24} md={19} lg={19} xl={19}>
           <Row align="middle">
@@ -20,7 +20,7 @@ const Head = () => {
                     <Title level={3} style={{margin: 0, lineHeight: 1.3}}>Fábio Henriques</Title>
                   </Row>
                   <Row>
-                    <Text type="secondary"  style={{margin: 0, lineHeight: 1.3}}>Software Developer / AWS Cloud Practitioner</Text>
+                    <Text type="secondary"  style={{margin: 0, lineHeight: 1.3}}>Software Developer</Text>
                   </Row>
                 </Col>
               </Row>
